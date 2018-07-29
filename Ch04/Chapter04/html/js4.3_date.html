@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Date 객체를 사용한 날짜 입력/출력 -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    window.onload = function () {
+        date = new Date();
+        date.setYear(1975);
+        date.setMonth(2);
+        date.setDate(7);
+        var strTime = "";
+        strTime += date.getYear() + "년 ";
+        strTime += date.getMonth() + "월 ";
+        strTime += date.getDate() + "일 ";
+        document.write(strTime);
+    }
+</script>

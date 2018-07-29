@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<!-- 함수 호출 시 자동 발생하는 event 객체 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button onclick="testEvent()">함수 호출 event 객체 실습</button>
+</body>
+</html>
+
+<script>
+    testEvent = function () {
+        console.log(event);
+        var str = event + '\n';
+        str += event.srcElement + '\n';
+        str += event.srcElement.innerHTML + '\n';
+        str += event.x + '\n';
+        str += event.y + '\n';
+        alert(str);
+    }
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- 유용한 내장 객체들 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+</body>
+</html>
+
+<script type="text/javascript">
+    window.onload = function () {
+        console.log(new Array(1, 2, 3));        // 배열 객체
+        console.log(Boolean(false));            // 논리값 객체
+        console.log(new Date());                // 날짜 및 시간 객체
+        console.log(document);                  // 현재 문서 객체
+        console.log(event);                     // 함수 호출 시 발생하는 이벤트
+        console.log(history);                   // 웹 페이지 로드 순서 객체
+        console.log(new Image("img.jpg"));      // 그림 객체
+        console.log(location);                  // 현재 위치 객체
+        console.log(Math.PI);                   // 수학 계산 객체
+        console.log(navigator);                 // 웹 브라우저 정보 객체
+        console.log(screen);                    // 화면 해상도, 색상 정보 객체
+        console.log(String.fromCharCode(65));   // 문자열 객체
+        console.log(window);                    // 웹 브라우저 객체, 최상위 객체
+        console.log(Number("65") + 300);        // Number 객체
+    }
+</script>

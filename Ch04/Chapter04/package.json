@@ -1,0 +1,9 @@
+{
+  "name": "chapter04",
+  "version": "0.0.0",
+  "description": "Chapter04",
+  "main": "app.js",
+  "author": {
+    "name": "kimsox"
+  }
+}

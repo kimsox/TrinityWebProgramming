@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Array 객체를 사용한 HTML 요소 관리 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table id="puzzle" border="1" width="400" height="400">
+        <tr>
+            <td>.</td><td>.</td><td>.</td><td>.</td>
+        </tr>
+        <tr>
+            <td>.</td><td>.</td><td>.</td><td>.</td>
+        </tr>
+        <tr>
+            <td>.</td><td>.</td><td>.</td><td>.</td>
+        </tr>
+        <tr>
+            <td>.</td><td>.</td><td>.</td><td>.</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<script type="text/javascript">
+    window.onload = function () {
+        cells = document.getElementsByTagName("td");
+        arr = new Array(4);
+        for (var i = 0; i < 4; i++) {
+            arr[i] = new Array(4);
+            for (var j = 0; j < 4; j++) {
+                arr[i][j] = cells[4 * i + j];
+                arr[i][j].innerHTML = 4 * i + j;
+                arr[i][j].style.background =
+                    i % 2 == 0 && (4 * i + j) % 2 != 0 || i % 2 != 0 && (4 * i + j) % 2 == 0 ? "Yellow" : "Green";
+            }
+        }
+    }
+</script>

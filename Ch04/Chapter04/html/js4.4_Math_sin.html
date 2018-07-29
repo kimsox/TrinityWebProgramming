@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Math 객치를 사용한 회전 운동 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
+
+<style>
+    #box {
+        position: relative;
+        left: 250px;
+        top: 250px;
+        width: 50px;
+        height: 50px;
+        background: red;
+    }
+</style>
+
+<script>
+    window.onload = function () {
+        var box = document.getElementById("box");
+        var x = 0;
+        var fn = setInterval(function () {
+            var value = x * 0.1;
+            var left = 250 + Math.floor(Math.sin(value) * 150);
+            var top = 250 + Math.floor(Math.cos(value) * 150);
+            var width = 250 + Math.floor(Math.cos(value) * 30);
+            var height = 250 + Math.floor(Math.cos(value) * 30);
+            box.style.left = left + "px";
+            box.style.top = top + "px";
+            x++;
+        }, 100);
+    }
+</script>
