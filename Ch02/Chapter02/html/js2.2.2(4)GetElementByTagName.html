@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- getElementByTagName() 메소드의 사용 -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        start = function () {
+            var li = document.getElementsByTagName("li");
+            li[2].style.backgroundColor = "Yellow";
+        }
+    </script>
+</head>
+<body onload="start()">
+    <!-- body가 로드되면 start() 함수가 호출된다 .-->
+    <ul>
+        <li>Korea</li>
+        <li>Japan</li>
+        <li>China</li>
+        <li>Betnam</li>
+    </ul>
+</body>
+</html>

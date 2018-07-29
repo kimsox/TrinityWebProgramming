@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<!-- <input> 태그와 value 속성 사용 -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        checkValue = function (element) {
+            var inputText = document.getElementById("userName");
+            var userNameValue = inputText.value;
+            inputText.size = userNameValue.length;
+            element.value = userNameValue + "님은 이미 확인 하셨습니다.";
+            element.onclick = "";
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="userName" value="성명입력" onclick="this.value=" />
+    <input type="button" id="btn" value="확인하기" onclick="checkValue(this)" />
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+    console.log("body 태그 위에서 선언되었다.");
+</script>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- HTML 페이지의 어느 위치에든
+        자바스크립트 태그를 선언해서 사용 가능하다.
+        자바스크립트의 실행은 위에서 아래로 순서대로 실행된다. -->
+    <script type="text/javascript">
+        console.log("html 태그 안에서 선언되었다.");
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        console.log("body 태그 안에서 선언되었다.");
+    </script>
+</body>
+</html>

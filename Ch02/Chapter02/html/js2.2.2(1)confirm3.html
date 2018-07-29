@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- onload 이벤트 핸들러를 이용한 <body> 태그 제어하기 -->
+
+<script type="text/javascript">
+    //document.write("결과: ");
+    window.onload = function () {
+        if (confirm("당신은 남자입니까") == true) {
+            gender = "남";
+        }
+        else {
+            gender = "여";
+        }
+        document.body.innerHTML += gender + "탕으로 가시오.";
+        // window.onload 이벤트가 발생 후에 처리되기 때문에
+        // document.body를 사용하는 데 문제가 없다.
+    }
+    // window가 로드되기 전에 document.body 객체를 사용하면
+    // 에러가 발생한다.
+    // document.write(gender + "탕으로 가시오.");
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
